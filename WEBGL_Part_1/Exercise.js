@@ -1,22 +1,17 @@
-//
-// Computer Graphics
-//
-// WebGL Exercises
-//
-
 // Register function to call after document has loaded
 window.onload = startup;
 
-// the gl object is saved globally
+// The gl object is saved globally
 var gl;
 
-// we keep all local parameters for the program in a single object
+// Local parameters for the program in a single object
 var ctx = {
-    shaderProgram: -1, //wird unten wieder überschrieben
-    aVertexPositionId: -1
+    shaderProgram: -1,
+    aVertexPositionId: -1,
+    uVertexColor: -1
 };
 
-// we keep all the parameters for drawing a specific object together
+// Parameters for drawing a specific object together
 var rectangleObject = {
     buffer: -1
 };
@@ -43,8 +38,6 @@ function initGL() {
 
     // set the clear color here
     gl.clearColor(1,0,0,1); //-> damit wird alles übermalen (erst wenn clear)
-    
-    // add more necessary commands here
 }
 
 /**
@@ -54,6 +47,7 @@ function setUpAttributesAndUniforms(){
     "use strict";
     // finds the index of the variable in the program || überschreibt ctx.aVertexPositionId
     ctx.aVertexPositionId = gl.getAttribLocation(ctx.shaderProgram, "aVertexPosition");
+    ctx.uVertexColor = gl.getUniformLocation(ctx.shaderProgram, "uColor");
 }
 
 /**
@@ -65,10 +59,16 @@ function setUpBuffers(){
     rectangleObject.buffer = gl.createBuffer();
 
     var vertices = [
-        //-0.5,0.5,
-        0.5,0.5,
-        0.5,-0.5,
-        //-0.5,-0.5
+        -0.8, 0.8,
+        -0.4, 0.8,
+        0.4, 0.0,
+        0.4, 0.8,
+        0.8, 0.8,
+        0.8, -0.8,
+        0.4, -0.8,
+        -0.4, 0.0,
+        -0.4,-0.8,
+        -0.8, -0.8
     ]
 
     gl.bindBuffer(gl.ARRAY_BUFFER, rectangleObject.buffer);
@@ -88,6 +88,8 @@ function draw() {
     gl.vertexAttribPointer(ctx.aVertexPositionId, 2, gl.FLOAT, false, 0,0);
     gl.enableVertexAttribArray(ctx.aVertexPositionId);
 
-    gl.drawArrays(gl.TRIANGLE_FAN, 0,4);
+    gl.uniform4f (ctx.uColorId , 0.0 , 1 , 0 , 1.0);
+
+    gl.drawArrays(gl.LINE_LOOP, 0, 10);
     console.log("done");
 }

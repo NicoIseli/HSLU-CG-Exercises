@@ -54,7 +54,7 @@ function WireFrameCube(gl, color) {
 
     function defineEdges(gl) {
         // define the edges for the cube, there are 12 edges in a cube
-        var vertexIndices = [
+       var vertexIndices = [
             // bottom
             2, 1, 0,
             0, 3, 2,
@@ -83,6 +83,8 @@ function WireFrameCube(gl, color) {
         gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, buffer);
         gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(vertexIndices), gl.STATIC_DRAW);
         return buffer;
+
+
     }
 
     return {
@@ -92,7 +94,7 @@ function WireFrameCube(gl, color) {
 
         draw: function(gl, aVertexPositionId, aVertexColorId) {
             gl.bindBuffer(gl.ARRAY_BUFFER, this.bufferVertices);
-            gl.vertexAttribPointer(aVertexPositionId, 3, gl.FLOAT, false, 6 * Float32Array.BYTES_PER_ELEMENT, 0);
+            gl.vertexAttribPointer(aVertexPositionId, 3, gl.FLOAT, false, 6 * Float32Array.BYTES_PER_ELEMENTFloat32Array.BYTES_PER_ELEMENT, 0);
             gl.enableVertexAttribArray(aVertexPositionId);
 
             gl.vertexAttribPointer(aVertexColorId, 3, gl.FLOAT, false, 6 * Float32Array.BYTES_PER_ELEMENT, 3 * Float32Array.BYTES_PER_ELEMENT);
