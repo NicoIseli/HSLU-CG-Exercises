@@ -7,7 +7,7 @@
  * @returns object with draw method
  * @constructor
  */
-function WireFrameCube(gl) {
+function WireFrameCube(gl, color) {
     function defineVertices(gl) {
         // define the vertices of the cube
         var vertices = [
@@ -104,14 +104,14 @@ function WireFrameCube(gl) {
     return {
         bufferVertices: defineVertices(gl),
         bufferEdges: defineEdges(gl),
-        //color: color,
+        color: color,
 
         draw: function(gl, aVertexPositionId, aVertexColorId) {
-            //var colorBuffer = gl.createBuffer();
-            //gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
-            //gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.color), gl.STATIC_DRAW);
-            //gl.vertexAttribPointer(aVertexColorId, 4, gl.FLOAT, false, 0, 0);
-            //gl.enableVertexAttribArray(aVertexColorId);
+            var colorBuffer = gl.createBuffer();
+            gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+            gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(this.color), gl.STATIC_DRAW);
+            gl.vertexAttribPointer(aVertexColorId, 4, gl.FLOAT, false, 0, 0);
+            gl.enableVertexAttribArray(aVertexColorId);
 
             gl.bindBuffer(gl.ARRAY_BUFFER, this.bufferVertices);
             gl.vertexAttribPointer(aVertexPositionId, 3, gl.FLOAT, false, 3 * Float32Array.BYTES_PER_ELEMENT, 0);

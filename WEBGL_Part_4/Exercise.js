@@ -83,12 +83,12 @@ function setUpAttributesAndUniforms(){
 function setUpBuffers(){
     "use strict";
 
-    cubes.wireFrameCube = WireFrameCube(gl, [0.0, 0.0, 0.0, 0.5]);
+    cubes.wireFrameCube = WireFrameCube(gl, [1, 0.5, 0.5, 1]);
 
     var viewMat = mat4.create();
     mat4.lookAt(
         viewMat,
-        [0, -3, 0], // eye
+        [0, -4, 0], // eye
         [0, 0, 0], // fovy / center
         [0, 0, 1], // up
     );
@@ -135,7 +135,7 @@ function draw() {
 
 
 
-       mat4.mul(worldMat, xRotation, yRotation, zRotation);
+       mat4.mul(worldMat, xRotation, yRotation);
 
         gl.uniformMatrix4fv(ctx.uWorldMatId, false, worldMat);
 

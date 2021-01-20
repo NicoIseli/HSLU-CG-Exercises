@@ -136,7 +136,7 @@ function setUpBuffers(){
     rectangleObject.buffer = gl.createBuffer();
 
     var vertices = [
-        -0.5,0.5,
+        -0.5, 0.5,
         0.5,0.5,
         0.5,-0.5,
         -0.5,-0.5

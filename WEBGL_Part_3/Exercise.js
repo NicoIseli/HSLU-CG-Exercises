@@ -43,6 +43,7 @@ var rectangleObject = {
 var key = {
     _pressed: {},
 
+    // Right Player
     UP: 38, // Up
     DOWN: 40, // Down
 

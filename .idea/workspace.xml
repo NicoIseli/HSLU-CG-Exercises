@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="9b1bd187-f7aa-455a-8246-e5dc5642e498" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEBGL_Composition/Composition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Composition/Composition.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEBGL_Part_1/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_1/Exercise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEBGL_Part_1/FragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_1/FragmentShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_2/Exercise_1/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_2/Exercise_1/Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_2/Exercise_2/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_2/Exercise_2/Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_3/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_3/Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_4/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_4/Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_4/VertexShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_4/VertexShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_4/wireFrameCubeEmpty.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_4/wireFrameCubeEmpty.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEBGL_Part_5/Exercise_1/solidCube.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_5/Exercise_1/solidCube.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,31 +29,32 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Exercise.html (1)">
-    <configuration name="Exercise.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_1/Exercise.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.Exercise.html (5)">
+    <configuration name="Exercise.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_5/Exercise_2/Exercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Exercise.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_5/Exercise_1/Exercise.html" useBuiltInWebServerPort="true">
+    <configuration name="Exercise.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_3/Exercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Exercise.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_2/Exercise_1/Exercise.html" useBuiltInWebServerPort="true">
+    <configuration name="Exercise.html (4)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_4/Exercise.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Exercise.html (5)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_5/Exercise_1/Exercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Exercise.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_2/Exercise_2/Exercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Exercise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/WEBGL_Part_1/Exercise.js" working-dir="$PROJECT_DIR$/WEBGL_Part_1">
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.Exercise.html (1)" />
-        <item itemvalue="JavaScript Debug.Exercise.html (3)" />
-        <item itemvalue="Node.js.Exercise.js" />
+        <item itemvalue="JavaScript Debug.Exercise.html (5)" />
         <item itemvalue="JavaScript Debug.Exercise.html (2)" />
+        <item itemvalue="JavaScript Debug.Exercise.html (4)" />
         <item itemvalue="JavaScript Debug.Exercise.html" />
+        <item itemvalue="JavaScript Debug.Exercise.html (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -62,6 +67,9 @@
       <option name="presentableId" value="Default" />
       <updated>1610889881948</updated>
       <workItem from="1610889883125" duration="11502000" />
+      <workItem from="1610991060017" duration="4789000" />
+      <workItem from="1611065946243" duration="8282000" />
+      <workItem from="1611152425395" duration="4884000" />
     </task>
     <servers />
   </component>
@@ -69,21 +77,25 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1242" height="160" key="GridCell.Tab.0.bottom" timestamp="1610910512326">
+    <state x="387" y="186" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1610993823493">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1242" height="160" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610910512326" />
-    <state width="1242" height="160" key="GridCell.Tab.0.center" timestamp="1610910512326">
+    <state x="387" y="186" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1610993823493" />
+    <state width="1242" height="160" key="GridCell.Tab.0.bottom" timestamp="1610993621067">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1242" height="160" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610910512326" />
-    <state width="1242" height="160" key="GridCell.Tab.0.left" timestamp="1610910512326">
+    <state width="1242" height="160" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1610993621067" />
+    <state width="1242" height="160" key="GridCell.Tab.0.center" timestamp="1610993621066">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1242" height="160" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610910512326" />
-    <state width="1242" height="160" key="GridCell.Tab.0.right" timestamp="1610910512326">
+    <state width="1242" height="160" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1610993621066" />
+    <state width="1242" height="160" key="GridCell.Tab.0.left" timestamp="1610993621066">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1242" height="160" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610910512326" />
+    <state width="1242" height="160" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1610993621066" />
+    <state width="1242" height="160" key="GridCell.Tab.0.right" timestamp="1610993621066">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1242" height="160" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1610993621066" />
   </component>
 </project>

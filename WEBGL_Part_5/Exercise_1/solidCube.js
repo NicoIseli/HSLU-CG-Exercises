@@ -21,10 +21,10 @@ function WireFrameCube(gl, color) {
             0.5, -0.5,  0.5,  /* V7 / 7 */   1.0, 1.0, 1.0,
 
             // front
-            -0.5, -0.5, -0.5,  /* V1 / 8 */   1.0, 0.0, 0.0,
-            0.5, -0.5, -0.5,  /* V2 / 9 */   1.0, 0.0, 0.0,
-            0.5, -0.5,  0.5,  /* V7 / 10 */  1.0, 0.0, 0.0,
-            -0.5, -0.5,  0.5,  /* V6 / 11 */  1.0, 0.0, 0.0,
+            -0.5, -0.5, -0.5,  /* V1 / 8 */   1.0, 1.0, 1.0,
+            0.5, -0.5, -0.5,  /* V2 / 9 */   0.0, 0.0, 0.0,
+            0.5, -0.5,  0.5,  /* V7 / 10 */  1.0, 1.0, 1.0,
+            -0.5, -0.5,  0.5,  /* V6 / 11 */  0.0, 0.0, 0.0,
 
             // back
             -0.5,  0.5, -0.5,  /* V0 / 12 */  0.0, 0.0, 0.0,
@@ -94,7 +94,7 @@ function WireFrameCube(gl, color) {
 
         draw: function(gl, aVertexPositionId, aVertexColorId) {
             gl.bindBuffer(gl.ARRAY_BUFFER, this.bufferVertices);
-            gl.vertexAttribPointer(aVertexPositionId, 3, gl.FLOAT, false, 6 * Float32Array.BYTES_PER_ELEMENTFloat32Array.BYTES_PER_ELEMENT, 0);
+            gl.vertexAttribPointer(aVertexPositionId, 3, gl.FLOAT, false, 6 * Float32Array.BYTES_PER_ELEMENT, 0);
             gl.enableVertexAttribArray(aVertexPositionId);
 
             gl.vertexAttribPointer(aVertexColorId, 3, gl.FLOAT, false, 6 * Float32Array.BYTES_PER_ELEMENT, 3 * Float32Array.BYTES_PER_ELEMENT);

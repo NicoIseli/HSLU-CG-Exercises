@@ -58,6 +58,7 @@ function setUpAttributesAndUniforms(){
     // finds the index of the variable in the program || überschreibt ctx.aVertexPositionId
     ctx.aVertexPositionId = gl.getAttribLocation(ctx.shaderProgram, "aVertexPosition");
     ctx.aColorId = gl.getAttribLocation (ctx.shaderProgram , "aColor" );
+    ctx.uColorId = gl.getUniformLocation(ctx.shaderProgram, 'uColor')
 }
 
 /**
@@ -111,7 +112,8 @@ function draw() {
     gl.vertexAttribPointer(ctx.aColorId, 4, gl.FLOAT, false, 0,0);
     gl.enableVertexAttribArray(ctx.aColorId);
 
-    //gl.uniform4f (ctx.uColorId , 0.0 , 0.5 , 0.5 , 1.0);
+    gl.uniform4f (ctx.uColorId , 0.0 , 0.5 , 0.5 , 1.0);
+
     gl.drawArrays(gl.TRIANGLE_FAN, 0,4);
     console.log("done");
 }
