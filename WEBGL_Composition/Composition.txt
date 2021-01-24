@@ -138,7 +138,7 @@ STRUCTURE
       - gl.LINE_LOOP: Draws a straight line to the next vertex, and connects
         the last vertex back to the first.
       - gl.LINES: Draws a line between a pair of two vertices.
-      - gl.TRIANGLE_STRIP: Draws continous triangles in order
+      - gl.TRIANGLE_STRIP: Draws continuous triangles in order
       - gl.TRIANGLE_FAN: Draws Triangles around the first vertex
       - gl.TRIANGLES: Draws a triangle for a group of three vertices
   - first:

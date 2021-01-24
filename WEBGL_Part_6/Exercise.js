@@ -30,13 +30,13 @@ var textures = {
 
 // parameters that define the scene
 var scene = {
-    eyePosition: [0, 10, -10],
+    eyePosition: [0, 0, -10],
     lookAtPosition: [0, 0, 0],
     upVector: [0, 1, 0],
     nearPlane: 0.1,
     farPlane: 15.0,
     fov: 40,
-    lightPosition: [0, 20, 0],
+    lightPosition: [0, 5, -5],
     lightColor: [1, 0, 1],
     rotateObjects: true,
     angle: 0,
@@ -155,7 +155,8 @@ function draw() {
     var textureMatrix = mat3.create();
     var normalMatrix = mat3.create();
 
-    gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    //gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+    gl.clear(gl.DEPTH_BUFFER_BIT);
 
     // set the matrices from the scene
     mat4.lookAt(viewMatrix, scene.eyePosition, scene.lookAtPosition, scene.upVector);
@@ -186,7 +187,7 @@ function draw() {
     gl.uniformMatrix4fv(ctx.uProjectionMatrixId, false, projectionMatrix);
 
     // translate and rotate objects
-    mat4.translate(modelViewMatrix, viewMatrix, [-1.0, 0, 0]);
+    mat4.translate(modelViewMatrix, viewMatrix, [-2.0, 0, 0]);
     mat4.rotate(modelViewMatrix, modelViewMatrix, scene.angle, [0, 1, 0]);
     gl.uniformMatrix4fv(ctx.uModelViewMatrixId, false, modelViewMatrix);
     mat3.normalFromMat4(normalMatrix, modelViewMatrix);
@@ -194,9 +195,9 @@ function draw() {
     drawingObjects.solidCube.draw(gl, ctx.aVertexPositionId, ctx.aVertexColorId, ctx.aVertexNormalId, ctx.aVertexTextureCoordId, textures.textureObject0);
 
     // draw sphere
-    mat4.translate(modelViewMatrix, viewMatrix, [0.0, 0.0, -1.0]);
+    mat4.translate(modelViewMatrix, viewMatrix, [0.0, 0.0, 5.0]);
     mat4.rotate(modelViewMatrix, modelViewMatrix, scene.angle, [0, 0.5, 0]);
-    mat4.scale(modelViewMatrix, modelViewMatrix, [0.8, 0.5, 0.5]);
+    mat4.scale(modelViewMatrix, modelViewMatrix, [1, 1, 1]);
     gl.uniformMatrix4fv(ctx.uModelViewMatrixId, false, modelViewMatrix);
     mat3.normalFromMat4(normalMatrix, modelViewMatrix);
     gl.uniformMatrix3fv(ctx.uNormalMatrixId, false, normalMatrix);

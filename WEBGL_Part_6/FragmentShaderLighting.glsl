@@ -1,6 +1,6 @@
 precision mediump float;
 
-bool inclSpecularLighting = false;
+bool inclSpecularLighting = true;
 uniform bool uEnableTexture;
 uniform bool uEnableLighting;
 
@@ -15,9 +15,9 @@ varying vec2 vTextureCoord;
 uniform sampler2D uSampler;
 
 
-const float ambientFactor = 0.3;
-const float shininess = 5.0;
-const vec3 specularMaterialColor = vec3(0.3, 0.3, 0.3);
+const float ambientFactor = 0.1;
+const float shininess = 10.0;
+const vec3 specularMaterialColor = vec3(0.0, 1.0, 1.0);
 
 void main() {
     vec3 baseColor = vColor;
