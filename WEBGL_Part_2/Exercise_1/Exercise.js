@@ -112,7 +112,7 @@ function draw() {
     gl.vertexAttribPointer(ctx.aColorId, 4, gl.FLOAT, false, 0,0);
     gl.enableVertexAttribArray(ctx.aColorId);
 
-    gl.uniform4f (ctx.uColorId , 0.0 , 0.5 , 0.5 , 1.0);
+    gl.uniform4f(ctx.uColorId , 0.0 , 0.5 , 0.5 , 1.0);
 
     gl.drawArrays(gl.TRIANGLE_FAN, 0,4);
     console.log("done");

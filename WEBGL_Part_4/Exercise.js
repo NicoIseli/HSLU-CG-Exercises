@@ -83,14 +83,42 @@ function setUpAttributesAndUniforms(){
 function setUpBuffers(){
     "use strict";
 
-    cubes.wireFrameCube = WireFrameCube(gl, [1, 0.5, 0.5, 1]);
+    cubes.wireFrameCube = WireFrameCube(gl,
+        [
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1,
+            1, 0, 1, 1
+        ]
+    );
 
     var viewMat = mat4.create();
     mat4.lookAt(
         viewMat,
-        [0, -4, 0], // eye
+        [0, 0, -5], // eye
         [0, 0, 0], // fovy / center
-        [0, 0, 1], // up
+        [0, 1, 0], // up
     );
 
     var projMat = mat4.create();
@@ -99,7 +127,7 @@ function setUpBuffers(){
         glMatrix.toRadian(45), // fovy
         canvas.clientWidth / canvas.clientHeight,  // aspect
         0.1, // near
-        10, // far
+        5.5, // far
     );
 
     // set matrices for vertex shader
@@ -135,7 +163,9 @@ function draw() {
 
 
 
-       mat4.mul(worldMat, xRotation, yRotation);
+       mat4.mul(worldMat, xRotation, zRotation);
+
+       mat4.fromTranslation(worldMat, [0, 0, 0])
 
         gl.uniformMatrix4fv(ctx.uWorldMatId, false, worldMat);
 

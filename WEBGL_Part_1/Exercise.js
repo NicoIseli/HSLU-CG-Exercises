@@ -8,12 +8,14 @@ var gl;
 var ctx = {
     shaderProgram: -1,
     aVertexPositionId: -1,
-    uVertexColor: -1
+    uVertexColor: -1,
+    aVertexColorId: -1
 };
 
 // Parameters for drawing a specific object together
 var rectangleObject = {
-    buffer: -1
+    buffer: -1,
+    colorBuffer: -1
 };
 
 /**
@@ -48,6 +50,7 @@ function setUpAttributesAndUniforms(){
     // finds the index of the variable in the program || überschreibt ctx.aVertexPositionId
     ctx.aVertexPositionId = gl.getAttribLocation(ctx.shaderProgram, "aVertexPosition");
     ctx.uVertexColor = gl.getUniformLocation(ctx.shaderProgram, "uColor");
+    ctx.aVertexColorId = gl.getAttribLocation(ctx.shaderProgram, "aVertexColor");
 }
 
 /**
@@ -73,6 +76,25 @@ function setUpBuffers(){
 
     gl.bindBuffer(gl.ARRAY_BUFFER, rectangleObject.buffer);
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertices), gl.STATIC_DRAW);
+
+    rectangleObject.colorBuffer = gl.createBuffer();
+    var colors = [
+        1, 0, 0,
+        1, 0, 1,
+        0, 0, 1,
+        0, 1, 1,
+        0, 1, 0,
+        1, 1, 0,
+        1, 0, 0,
+        1, 0, 1,
+        0, 0, 1,
+        0, 1, 1,
+    ]
+
+    gl.bindBuffer(gl.ARRAY_BUFFER, rectangleObject.colorBuffer);
+    gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(colors), gl.STATIC_DRAW);
+
+
 }
 
 /**
@@ -81,14 +103,18 @@ function setUpBuffers(){
 function draw() {
     "use strict";
     console.log("Drawing");
-    gl.clear(gl.COLOR_BUFFER_BIT);
+    // gl.clear(gl.COLOR_BUFFER_BIT);
     // add drawing routines here
+
+    gl.uniform4f (ctx.uColorId , 0.0 , 1 , 0 , 1.0);
 
     gl.bindBuffer(gl.ARRAY_BUFFER, rectangleObject.buffer);
     gl.vertexAttribPointer(ctx.aVertexPositionId, 2, gl.FLOAT, false, 0,0);
     gl.enableVertexAttribArray(ctx.aVertexPositionId);
 
-    gl.uniform4f (ctx.uColorId , 0.0 , 1 , 0 , 1.0);
+    gl.bindBuffer(gl.ARRAY_BUFFER, rectangleObject.colorBuffer);
+    gl.vertexAttribPointer(ctx.aVertexColorId, 3, gl.FLOAT, false, 0,0);
+    gl.enableVertexAttribArray(ctx.aVertexColorId);
 
     gl.drawArrays(gl.LINE_LOOP, 0, 10);
     console.log("done");

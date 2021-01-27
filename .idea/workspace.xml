@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="9b1bd187-f7aa-455a-8246-e5dc5642e498" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEBGL_Composition/Composition.txt" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Composition/Composition.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEBGL_Part_2/Exercise_1/FragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_2/Exercise_1/FragmentShader.glsl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEBGL_Part_6/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_6/Exercise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEBGL_Part_6/FragmentShaderLighting.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_6/FragmentShaderLighting.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_1/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_1/Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_1/FragmentShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_1/FragmentShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_1/VertexShader.glsl" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_1/VertexShader.glsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_2/Exercise_1/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_2/Exercise_1/Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_4/Exercise.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_4/Exercise.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEBGL_Part_5/Exercise_1/solidCube.js" beforeDir="false" afterPath="$PROJECT_DIR$/WEBGL_Part_5/Exercise_1/solidCube.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,29 +30,29 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.Exercise.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.Exercise.html">
     <configuration name="Exercise.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_6/Exercise.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Exercise.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_1/Exercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="Exercise.html (3)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_2/Exercise_1/Exercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Exercise.html (5)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_5/Exercise_1/Exercise.html" useBuiltInWebServerPort="true">
+    <configuration name="Exercise.html (4)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_5/Exercise_1/Exercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Exercise.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_3/Exercise.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="Exercise.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/WEBGL_Part_6/Exercise.js" working-dir="$PROJECT_DIR$/WEBGL_Part_6">
+    <configuration name="Exercise.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/HSLU-CG-Exercises/WEBGL_Part_4/Exercise.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.Exercise.html (1)" />
-        <item itemvalue="Node.js.Exercise.js" />
-        <item itemvalue="JavaScript Debug.Exercise.html (5)" />
         <item itemvalue="JavaScript Debug.Exercise.html" />
         <item itemvalue="JavaScript Debug.Exercise.html (3)" />
+        <item itemvalue="JavaScript Debug.Exercise.html (4)" />
+        <item itemvalue="JavaScript Debug.Exercise.html (2)" />
+        <item itemvalue="JavaScript Debug.Exercise.html (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -73,7 +75,12 @@
       <workItem from="1611404047642" duration="7370000" />
       <workItem from="1611414875786" duration="4662000" />
       <workItem from="1611421138652" duration="2377000" />
-      <workItem from="1611507135054" duration="2294000" />
+      <workItem from="1611507135054" duration="2838000" />
+      <workItem from="1611566764612" duration="629000" />
+      <workItem from="1611662747207" duration="7675000" />
+      <workItem from="1611671416471" duration="4430000" />
+      <workItem from="1611737824389" duration="416000" />
+      <workItem from="1611760681440" duration="711000" />
     </task>
     <servers />
   </component>
